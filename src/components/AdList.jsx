@@ -3,8 +3,8 @@ import AdCard from "./AdCard";
 
 function AdList({ advertisements }) {
   return (
-    <div id="advertisements" className="row">
-      <div className="m-4">
+    <div id="advertisements" className="row m-5">
+      <div className="m-2">
         <h3>Advertisement List</h3>
       </div>
       {advertisements.map((advertisement) => (
