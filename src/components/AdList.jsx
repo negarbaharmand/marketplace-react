@@ -3,7 +3,7 @@ import AdCard from "./AdCard";
 
 function AdList({ advertisements }) {
   return (
-    <div className="advertisement-list">
+    <div id="advertisements" className="row">
       {advertisements.map((advertisement) => (
         <AdCard key={advertisement.title} advertisement={advertisement} />
       ))}

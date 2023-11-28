@@ -5,7 +5,7 @@ function AdCard({ advertisement }) {
     <div className="card mb-4 col-md-4">
       <img
         className="card-img-top"
-        src={advertisement.imageUrl}
+        src={advertisement.image}
         alt={advertisement.title}
       />
       <div className="card-body">
@@ -13,15 +13,15 @@ function AdCard({ advertisement }) {
         <p className="card-text">{advertisement.description}</p>
         <p className="card-text">Contact: {advertisement.contact}</p>
       </div>
-      <div
-        className="card-footer text-center"
-        onClick={() => {
-          alert(`Contact: ${advertisement.contact}`);
-        }}
-      >
-        <a href="#" class="btn btn-primary">
+      <div className="card-footer text-center">
+        <button
+          className="btn btn-info btn-block"
+          onClick={() => {
+            alert(`Contact: ${advertisement.contact}`);
+          }}
+        >
           Details
-        </a>
+        </button>
       </div>
     </div>
   );
