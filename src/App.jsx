@@ -1,5 +1,6 @@
 import { useState } from "react";
 import AdList from "./components/AdList";
+import Navbar from "./components/Navbar";
 
 function App() {
   const advertisementsData = [
@@ -42,7 +43,7 @@ function App() {
   ];
   return (
     <div className="app">
-      <h2>Marketpalce React App</h2>
+      <Navbar />
       <AdList advertisements={advertisementsData} />
     </div>
   );
