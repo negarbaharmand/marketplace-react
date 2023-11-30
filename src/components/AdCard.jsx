@@ -1,6 +1,6 @@
 import React from "react";
 
-function AdCard({ advertisement }) {
+function AdCard({ advertisement, buttonClickHandler }) {
   return (
     <div className="card mb-4 col-md-4">
       <img
@@ -17,7 +17,7 @@ function AdCard({ advertisement }) {
         <button
           className="btn btn-info btn-block"
           onClick={() => {
-            alert(`Contact: ${advertisement.contact}`);
+            buttonClickHandler(advertisement.contact);
           }}
         >
           Details
